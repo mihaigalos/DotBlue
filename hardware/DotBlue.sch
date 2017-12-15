@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -7629,7 +7629,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="+3V4" gate="G$1" x="135.89" y="62.23"/>
 <instance part="SUPPLY5" gate="GND" x="125.73" y="48.26"/>
 <instance part="C3" gate="G$1" x="21.59" y="170.18"/>
-<instance part="SUPPLY6" gate="GND" x="21.59" y="173.99" rot="R180"/>
+<instance part="SUPPLY6" gate="GND" x="21.59" y="176.53" rot="R180"/>
 <instance part="R3" gate="G$1" x="118.11" y="107.95" rot="R90"/>
 <instance part="R4" gate="G$1" x="118.11" y="96.52" rot="R90"/>
 <instance part="SUPPLY8" gate="GND" x="118.11" y="88.9"/>
@@ -7701,7 +7701,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="C3" gate="G$1" pin="1"/>
 <pinref part="SUPPLY6" gate="GND" pin="GND"/>
-<wire x1="21.59" y1="172.72" x2="21.59" y2="171.45" width="0.1524" layer="91"/>
+<wire x1="21.59" y1="172.72" x2="21.59" y2="173.99" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R4" gate="G$1" pin="1"/>
@@ -7866,12 +7866,22 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="53.34" y1="17.78" x2="53.34" y2="15.24" width="0.1524" layer="91"/>
 <label x="53.34" y="15.24" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="RXD"/>
+<wire x1="66.04" y1="139.7" x2="71.12" y2="139.7" width="0.1524" layer="91"/>
+<label x="71.12" y="139.7" size="1.27" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="RXD" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="P0.00/AREF0"/>
 <wire x1="58.42" y1="17.78" x2="58.42" y2="15.24" width="0.1524" layer="91"/>
 <label x="58.42" y="15.24" size="1.27" layer="95" rot="R270" xref="yes"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="TXD"/>
+<wire x1="66.04" y1="142.24" x2="71.12" y2="142.24" width="0.1524" layer="91"/>
+<label x="71.12" y="142.24" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -7957,6 +7967,15 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,25.4,66.04,U1,VDD,+3V3,,,"/>
+<approved hash="104,1,27.94,157.48,IC1,VDD,+3V3,,,"/>
+<approved hash="202,1,66.04,152.4,IC1,RI,,,,"/>
+<approved hash="202,1,66.04,149.86,IC1,DCD,,,,"/>
+<approved hash="202,1,66.04,144.78,IC1,DSR,,,,"/>
+<approved hash="202,1,66.04,134.62,IC1,CTS,,,,"/>
+<approved hash="113,1,176.805,143.51,R1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
