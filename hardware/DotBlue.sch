@@ -7197,6 +7197,9 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <part name="SUPPLY5" library="supply2" deviceset="GND" device=""/>
 <part name="C3" library="rcl" deviceset="C-EU" device="C0603" value="1uF"/>
 <part name="SUPPLY6" library="supply2" deviceset="GND" device=""/>
+<part name="R3" library="rcl" deviceset="R-EU_" device="R0603"/>
+<part name="R4" library="rcl" deviceset="R-EU_" device="R0603"/>
+<part name="SUPPLY8" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7238,6 +7241,9 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <instance part="SUPPLY5" gate="GND" x="125.73" y="48.26"/>
 <instance part="C3" gate="G$1" x="21.59" y="170.18"/>
 <instance part="SUPPLY6" gate="GND" x="21.59" y="173.99" rot="R180"/>
+<instance part="R3" gate="G$1" x="118.11" y="107.95" rot="R90"/>
+<instance part="R4" gate="G$1" x="118.11" y="96.52" rot="R90"/>
+<instance part="SUPPLY8" gate="GND" x="118.11" y="88.9"/>
 </instances>
 <busses>
 </busses>
@@ -7304,6 +7310,10 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <pinref part="SUPPLY6" gate="GND" pin="GND"/>
 <wire x1="21.59" y1="172.72" x2="21.59" y2="171.45" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="R4" gate="G$1" pin="1"/>
+<pinref part="SUPPLY8" gate="GND" pin="GND"/>
+</segment>
 </net>
 <net name="+5V" class="0">
 <segment>
@@ -7347,30 +7357,6 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <pinref part="IC1" gate="G$1" pin="D+"/>
 <wire x1="27.94" y1="152.4" x2="15.24" y2="152.4" width="0.1524" layer="91"/>
 <label x="15.24" y="152.4" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="OUTB" class="0">
-<segment>
-<label x="116.84" y="115.57" size="1.27" layer="95" rot="R180" xref="yes"/>
-<wire x1="137.16" y1="115.57" x2="116.84" y2="115.57" width="0.1524" layer="91"/>
-<pinref part="X3" gate="-2" pin="1"/>
-</segment>
-<segment>
-<pinref part="U1" gate="G$1" pin="P0.22"/>
-<wire x1="88.9" y1="53.34" x2="92.71" y2="53.34" width="0.1524" layer="91"/>
-<label x="92.71" y="53.34" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="OUTA" class="0">
-<segment>
-<pinref part="X3" gate="-3" pin="1"/>
-<wire x1="137.16" y1="113.03" x2="116.84" y2="113.03" width="0.1524" layer="91"/>
-<label x="116.84" y="113.03" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U1" gate="G$1" pin="P0.21"/>
-<wire x1="88.9" y1="50.8" x2="92.71" y2="50.8" width="0.1524" layer="91"/>
-<label x="92.71" y="50.8" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="LED_RED" class="0">
@@ -7490,6 +7476,48 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <pinref part="IC1" gate="G$1" pin="DTR"/>
 <wire x1="66.04" y1="147.32" x2="69.85" y2="147.32" width="0.1524" layer="91"/>
 <label x="69.85" y="147.32" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="IO_B" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="P0.22"/>
+<wire x1="88.9" y1="53.34" x2="92.71" y2="53.34" width="0.1524" layer="91"/>
+<label x="92.71" y="53.34" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<label x="116.84" y="115.57" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="137.16" y1="115.57" x2="116.84" y2="115.57" width="0.1524" layer="91"/>
+<pinref part="X3" gate="-2" pin="1"/>
+</segment>
+</net>
+<net name="IO_A" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="P0.21"/>
+<wire x1="88.9" y1="50.8" x2="92.71" y2="50.8" width="0.1524" layer="91"/>
+<label x="92.71" y="50.8" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="X3" gate="-3" pin="1"/>
+<wire x1="137.16" y1="113.03" x2="118.11" y2="113.03" width="0.1524" layer="91"/>
+<label x="116.84" y="113.03" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="118.11" y1="113.03" x2="116.84" y2="113.03" width="0.1524" layer="91"/>
+<junction x="118.11" y="113.03"/>
+</segment>
+</net>
+<net name="AIN5" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="P0.04/AIN5"/>
+<wire x1="88.9" y1="40.64" x2="92.71" y2="40.64" width="0.1524" layer="91"/>
+<label x="92.71" y="40.64" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R3" gate="G$1" pin="1"/>
+<pinref part="R4" gate="G$1" pin="2"/>
+<wire x1="118.11" y1="102.87" x2="118.11" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="118.11" y1="102.87" x2="116.84" y2="102.87" width="0.1524" layer="91"/>
+<junction x="118.11" y="102.87"/>
+<label x="116.84" y="102.87" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
