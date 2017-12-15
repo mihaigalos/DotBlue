@@ -7478,24 +7478,7 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <label x="69.85" y="147.32" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="IO_B" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="P0.22"/>
-<wire x1="88.9" y1="53.34" x2="92.71" y2="53.34" width="0.1524" layer="91"/>
-<label x="92.71" y="53.34" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<label x="116.84" y="115.57" size="1.27" layer="95" rot="R180" xref="yes"/>
-<wire x1="137.16" y1="115.57" x2="116.84" y2="115.57" width="0.1524" layer="91"/>
-<pinref part="X3" gate="-2" pin="1"/>
-</segment>
-</net>
-<net name="IO_A" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="P0.21"/>
-<wire x1="88.9" y1="50.8" x2="92.71" y2="50.8" width="0.1524" layer="91"/>
-<label x="92.71" y="50.8" size="1.27" layer="95" xref="yes"/>
-</segment>
+<net name="SDA" class="0">
 <segment>
 <pinref part="X3" gate="-3" pin="1"/>
 <wire x1="137.16" y1="113.03" x2="118.11" y2="113.03" width="0.1524" layer="91"/>
@@ -7503,6 +7486,11 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="118.11" y1="113.03" x2="116.84" y2="113.03" width="0.1524" layer="91"/>
 <junction x="118.11" y="113.03"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="P0.06/AREF1/AIN7"/>
+<wire x1="88.9" y1="38.1" x2="92.71" y2="38.1" width="0.1524" layer="91"/>
+<label x="92.71" y="38.1" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="AIN5" class="0">
@@ -7518,6 +7506,18 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <wire x1="118.11" y1="102.87" x2="116.84" y2="102.87" width="0.1524" layer="91"/>
 <junction x="118.11" y="102.87"/>
 <label x="116.84" y="102.87" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="SCL" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="P0.05/AIN6"/>
+<wire x1="48.26" y1="17.78" x2="48.26" y2="15.24" width="0.1524" layer="91"/>
+<label x="48.26" y="15.24" size="1.27" layer="95" rot="R270" xref="yes"/>
+</segment>
+<segment>
+<label x="116.84" y="115.57" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="137.16" y1="115.57" x2="116.84" y2="115.57" width="0.1524" layer="91"/>
+<pinref part="X3" gate="-2" pin="1"/>
 </segment>
 </net>
 </nets>
