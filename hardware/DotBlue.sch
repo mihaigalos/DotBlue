@@ -7161,6 +7161,282 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 </deviceset>
 </devicesets>
 </library>
+<library name="omron">
+<packages>
+<package name="B3U-3100P(M)-B">
+<wire x1="-1.5" y1="1.25" x2="-0.85" y2="1.25" width="0.1" layer="21"/>
+<wire x1="-0.85" y1="1.25" x2="-0.85" y2="1.1" width="0.1" layer="21"/>
+<wire x1="-0.85" y1="1.1" x2="-0.75" y2="1" width="0.1" layer="21" curve="90"/>
+<wire x1="-0.75" y1="1" x2="0.75" y2="1" width="0.1" layer="21"/>
+<wire x1="0.75" y1="1" x2="0.85" y2="1.1" width="0.1" layer="21" curve="90"/>
+<wire x1="0.85" y1="1.1" x2="0.85" y2="1.25" width="0.1" layer="21"/>
+<wire x1="0.85" y1="1.25" x2="1.5" y2="1.25" width="0.1" layer="21"/>
+<wire x1="1.5" y1="1.25" x2="1.5" y2="-1.25" width="0.1" layer="21"/>
+<wire x1="1.5" y1="-1.25" x2="-1.5" y2="-1.25" width="0.1" layer="21"/>
+<wire x1="-1.5" y1="-1.25" x2="-1.5" y2="1.25" width="0.1" layer="21"/>
+<rectangle x1="-2" y1="-0.7" x2="-1.5" y2="0.7" layer="21"/>
+<rectangle x1="1.5" y1="-0.7" x2="2" y2="0.7" layer="21" rot="R180"/>
+<rectangle x1="-0.25" y1="-1.9" x2="0.25" y2="-1.25" layer="21"/>
+<hole x="0" y="0" drill="0.85"/>
+<smd name="1" x="-1.75" y="0" dx="0.6" dy="1.7" layer="1" stop="no"/>
+<smd name="2" x="1.75" y="0" dx="0.6" dy="1.7" layer="1" stop="no"/>
+<smd name="GND" x="0" y="-1.65" dx="0.8" dy="1.1" layer="1" stop="no"/>
+<rectangle x1="-2.05" y1="-0.85" x2="-1.45" y2="0.85" layer="29"/>
+<rectangle x1="-0.4" y1="-2.2" x2="0.4" y2="-1.1" layer="29"/>
+<rectangle x1="1.45" y1="-0.85" x2="2.05" y2="0.85" layer="29"/>
+<wire x1="-0.85" y1="1.25" x2="-0.85" y2="1.55" width="0.08" layer="21"/>
+<wire x1="-0.85" y1="1.55" x2="-0.45" y2="1.95" width="0.08" layer="21"/>
+<wire x1="-0.45" y1="1.95" x2="0.45" y2="1.95" width="0.08" layer="21"/>
+<wire x1="0.45" y1="1.95" x2="0.85" y2="1.55" width="0.08" layer="21"/>
+<wire x1="0.85" y1="1.55" x2="0.85" y2="1.25" width="0.08" layer="21"/>
+<text x="2.54" y="0.635" size="0.8128" layer="25" font="vector">&gt;NAME</text>
+<text x="2.54" y="-0.635" size="0.8128" layer="27" font="vector">&gt;VALUE</text>
+</package>
+<package name="B3U-1000P(M)">
+<wire x1="-1.5" y1="1.25" x2="1.5" y2="1.25" width="0.1" layer="21"/>
+<wire x1="1.5" y1="1.25" x2="1.5" y2="-1.25" width="0.1" layer="21"/>
+<wire x1="1.5" y1="-1.25" x2="-1.5" y2="-1.25" width="0.1" layer="21"/>
+<wire x1="-1.5" y1="-1.25" x2="-1.5" y2="1.25" width="0.1" layer="21"/>
+<rectangle x1="-2" y1="-0.7" x2="-1.5" y2="0.7" layer="21"/>
+<rectangle x1="1.5" y1="-0.7" x2="2" y2="0.7" layer="21" rot="R180"/>
+<smd name="1" x="-1.75" y="0" dx="0.6" dy="1.7" layer="1" stop="no"/>
+<smd name="2" x="1.75" y="0" dx="0.6" dy="1.7" layer="1" stop="no"/>
+<rectangle x1="-2.05" y1="-0.85" x2="-1.45" y2="0.85" layer="29"/>
+<rectangle x1="1.45" y1="-0.85" x2="2.05" y2="0.85" layer="29"/>
+<text x="2.54" y="0.635" size="0.8128" layer="25" font="vector">&gt;NAME</text>
+<text x="2.54" y="-0.635" size="0.8128" layer="27" font="vector">&gt;VALUE</text>
+<circle x="0" y="0" radius="0.75" width="0.1" layer="21"/>
+</package>
+<package name="B3U-1000P(M)-B">
+<wire x1="-1.5" y1="1.25" x2="1.5" y2="1.25" width="0.1" layer="21"/>
+<wire x1="1.5" y1="1.25" x2="1.5" y2="-1.25" width="0.1" layer="21"/>
+<wire x1="1.5" y1="-1.25" x2="-1.5" y2="-1.25" width="0.1" layer="21"/>
+<wire x1="-1.5" y1="-1.25" x2="-1.5" y2="1.25" width="0.1" layer="21"/>
+<rectangle x1="-2" y1="-0.7" x2="-1.5" y2="0.7" layer="21"/>
+<rectangle x1="1.5" y1="-0.7" x2="2" y2="0.7" layer="21" rot="R180"/>
+<hole x="0" y="0" drill="0.85"/>
+<smd name="1" x="-1.75" y="0" dx="0.6" dy="1.7" layer="1" stop="no"/>
+<smd name="2" x="1.75" y="0" dx="0.6" dy="1.7" layer="1" stop="no"/>
+<rectangle x1="-2.05" y1="-0.85" x2="-1.45" y2="0.85" layer="29"/>
+<rectangle x1="1.45" y1="-0.85" x2="2.05" y2="0.85" layer="29"/>
+<text x="2.54" y="0.635" size="0.8128" layer="25" font="vector">&gt;NAME</text>
+<text x="2.54" y="-0.635" size="0.8128" layer="27" font="vector">&gt;VALUE</text>
+<circle x="0" y="0" radius="0.75" width="0.1" layer="21"/>
+</package>
+<package name="B3U-1100P(M)">
+<wire x1="-1.5" y1="1.25" x2="1.5" y2="1.25" width="0.1" layer="21"/>
+<wire x1="1.5" y1="1.25" x2="1.5" y2="-1.25" width="0.1" layer="21"/>
+<wire x1="1.5" y1="-1.25" x2="-1.5" y2="-1.25" width="0.1" layer="21"/>
+<wire x1="-1.5" y1="-1.25" x2="-1.5" y2="1.25" width="0.1" layer="21"/>
+<rectangle x1="-2" y1="-0.7" x2="-1.5" y2="0.7" layer="21"/>
+<rectangle x1="1.5" y1="-0.7" x2="2" y2="0.7" layer="21" rot="R180"/>
+<rectangle x1="-0.25" y1="-1.9" x2="0.25" y2="-1.25" layer="21"/>
+<smd name="1" x="-1.75" y="0" dx="0.6" dy="1.7" layer="1" stop="no"/>
+<smd name="2" x="1.75" y="0" dx="0.6" dy="1.7" layer="1" stop="no"/>
+<smd name="GND" x="0" y="-1.65" dx="0.8" dy="1.1" layer="1" stop="no"/>
+<rectangle x1="-2.05" y1="-0.85" x2="-1.45" y2="0.85" layer="29"/>
+<rectangle x1="-0.4" y1="-2.2" x2="0.4" y2="-1.1" layer="29"/>
+<rectangle x1="1.45" y1="-0.85" x2="2.05" y2="0.85" layer="29"/>
+<text x="2.54" y="0.635" size="0.8128" layer="25" font="vector">&gt;NAME</text>
+<text x="2.54" y="-0.635" size="0.8128" layer="27" font="vector">&gt;VALUE</text>
+<circle x="0" y="0" radius="0.75" width="0.1" layer="21"/>
+</package>
+<package name="B3U-3000P(M)-B">
+<wire x1="-1.5" y1="1.25" x2="-0.85" y2="1.25" width="0.1" layer="21"/>
+<wire x1="-0.85" y1="1.25" x2="-0.85" y2="1.1" width="0.1" layer="21"/>
+<wire x1="-0.85" y1="1.1" x2="-0.75" y2="1" width="0.1" layer="21" curve="90"/>
+<wire x1="-0.75" y1="1" x2="0.75" y2="1" width="0.1" layer="21"/>
+<wire x1="0.75" y1="1" x2="0.85" y2="1.1" width="0.1" layer="21" curve="90"/>
+<wire x1="0.85" y1="1.1" x2="0.85" y2="1.25" width="0.1" layer="21"/>
+<wire x1="0.85" y1="1.25" x2="1.5" y2="1.25" width="0.1" layer="21"/>
+<wire x1="1.5" y1="1.25" x2="1.5" y2="-1.25" width="0.1" layer="21"/>
+<wire x1="1.5" y1="-1.25" x2="-1.5" y2="-1.25" width="0.1" layer="21"/>
+<wire x1="-1.5" y1="-1.25" x2="-1.5" y2="1.25" width="0.1" layer="21"/>
+<rectangle x1="-2" y1="-0.7" x2="-1.5" y2="0.7" layer="21"/>
+<rectangle x1="1.5" y1="-0.7" x2="2" y2="0.7" layer="21" rot="R180"/>
+<hole x="0" y="0" drill="0.85"/>
+<smd name="1" x="-1.75" y="0" dx="0.6" dy="1.7" layer="1" stop="no"/>
+<smd name="2" x="1.75" y="0" dx="0.6" dy="1.7" layer="1" stop="no"/>
+<rectangle x1="-2.05" y1="-0.85" x2="-1.45" y2="0.85" layer="29"/>
+<rectangle x1="1.45" y1="-0.85" x2="2.05" y2="0.85" layer="29"/>
+<wire x1="-0.85" y1="1.25" x2="-0.85" y2="1.55" width="0.08" layer="21"/>
+<wire x1="-0.85" y1="1.55" x2="-0.45" y2="1.95" width="0.08" layer="21"/>
+<wire x1="-0.45" y1="1.95" x2="0.45" y2="1.95" width="0.08" layer="21"/>
+<wire x1="0.45" y1="1.95" x2="0.85" y2="1.55" width="0.08" layer="21"/>
+<wire x1="0.85" y1="1.55" x2="0.85" y2="1.25" width="0.08" layer="21"/>
+<text x="2.54" y="0.635" size="0.8128" layer="25" font="vector">&gt;NAME</text>
+<text x="2.54" y="-0.635" size="0.8128" layer="27" font="vector">&gt;VALUE</text>
+</package>
+<package name="B3U-1100P(M)-B">
+<wire x1="-1.5" y1="1.25" x2="1.5" y2="1.25" width="0.1" layer="21"/>
+<wire x1="1.5" y1="1.25" x2="1.5" y2="-1.25" width="0.1" layer="21"/>
+<wire x1="1.5" y1="-1.25" x2="-1.5" y2="-1.25" width="0.1" layer="21"/>
+<wire x1="-1.5" y1="-1.25" x2="-1.5" y2="1.25" width="0.1" layer="21"/>
+<rectangle x1="-2" y1="-0.7" x2="-1.5" y2="0.7" layer="21"/>
+<rectangle x1="1.5" y1="-0.7" x2="2" y2="0.7" layer="21" rot="R180"/>
+<rectangle x1="-0.25" y1="-1.9" x2="0.25" y2="-1.25" layer="21"/>
+<hole x="0" y="0" drill="0.85"/>
+<smd name="1" x="-1.75" y="0" dx="0.6" dy="1.7" layer="1" stop="no"/>
+<smd name="2" x="1.75" y="0" dx="0.6" dy="1.7" layer="1" stop="no"/>
+<smd name="GND" x="0" y="-1.65" dx="0.8" dy="1.1" layer="1" stop="no"/>
+<rectangle x1="-2.05" y1="-0.85" x2="-1.45" y2="0.85" layer="29"/>
+<rectangle x1="-0.4" y1="-2.2" x2="0.4" y2="-1.1" layer="29"/>
+<rectangle x1="1.45" y1="-0.85" x2="2.05" y2="0.85" layer="29"/>
+<text x="2.54" y="0.635" size="0.8128" layer="25" font="vector">&gt;NAME</text>
+<text x="2.54" y="-0.635" size="0.8128" layer="27" font="vector">&gt;VALUE</text>
+<circle x="0" y="0" radius="0.75" width="0.1" layer="21"/>
+</package>
+<package name="B3U-3000P(M)">
+<wire x1="-1.5" y1="1.25" x2="-0.85" y2="1.25" width="0.1" layer="21"/>
+<wire x1="-0.85" y1="1.25" x2="-0.85" y2="1.1" width="0.1" layer="21"/>
+<wire x1="-0.85" y1="1.1" x2="-0.75" y2="1" width="0.1" layer="21" curve="90"/>
+<wire x1="-0.75" y1="1" x2="0.75" y2="1" width="0.1" layer="21"/>
+<wire x1="0.75" y1="1" x2="0.85" y2="1.1" width="0.1" layer="21" curve="90"/>
+<wire x1="0.85" y1="1.1" x2="0.85" y2="1.25" width="0.1" layer="21"/>
+<wire x1="0.85" y1="1.25" x2="1.5" y2="1.25" width="0.1" layer="21"/>
+<wire x1="1.5" y1="1.25" x2="1.5" y2="-1.25" width="0.1" layer="21"/>
+<wire x1="1.5" y1="-1.25" x2="-1.5" y2="-1.25" width="0.1" layer="21"/>
+<wire x1="-1.5" y1="-1.25" x2="-1.5" y2="1.25" width="0.1" layer="21"/>
+<rectangle x1="-2" y1="-0.7" x2="-1.5" y2="0.7" layer="21"/>
+<rectangle x1="1.5" y1="-0.7" x2="2" y2="0.7" layer="21" rot="R180"/>
+<smd name="1" x="-1.75" y="0" dx="0.6" dy="1.7" layer="1" stop="no"/>
+<smd name="2" x="1.75" y="0" dx="0.6" dy="1.7" layer="1" stop="no"/>
+<rectangle x1="-2.05" y1="-0.85" x2="-1.45" y2="0.85" layer="29"/>
+<rectangle x1="1.45" y1="-0.85" x2="2.05" y2="0.85" layer="29"/>
+<wire x1="-0.85" y1="1.25" x2="-0.85" y2="1.55" width="0.08" layer="21"/>
+<wire x1="-0.85" y1="1.55" x2="-0.45" y2="1.95" width="0.08" layer="21"/>
+<wire x1="-0.45" y1="1.95" x2="0.45" y2="1.95" width="0.08" layer="21"/>
+<wire x1="0.45" y1="1.95" x2="0.85" y2="1.55" width="0.08" layer="21"/>
+<wire x1="0.85" y1="1.55" x2="0.85" y2="1.25" width="0.08" layer="21"/>
+<text x="2.54" y="0.635" size="0.8128" layer="25" font="vector">&gt;NAME</text>
+<text x="2.54" y="-0.635" size="0.8128" layer="27" font="vector">&gt;VALUE</text>
+</package>
+<package name="B3U-3100P(M)">
+<wire x1="-1.5" y1="1.25" x2="-0.85" y2="1.25" width="0.1" layer="21"/>
+<wire x1="-0.85" y1="1.25" x2="-0.85" y2="1.1" width="0.1" layer="21"/>
+<wire x1="-0.85" y1="1.1" x2="-0.75" y2="1" width="0.1" layer="21" curve="90"/>
+<wire x1="-0.75" y1="1" x2="0.75" y2="1" width="0.1" layer="21"/>
+<wire x1="0.75" y1="1" x2="0.85" y2="1.1" width="0.1" layer="21" curve="90"/>
+<wire x1="0.85" y1="1.1" x2="0.85" y2="1.25" width="0.1" layer="21"/>
+<wire x1="0.85" y1="1.25" x2="1.5" y2="1.25" width="0.1" layer="21"/>
+<wire x1="1.5" y1="1.25" x2="1.5" y2="-1.25" width="0.1" layer="21"/>
+<wire x1="1.5" y1="-1.25" x2="-1.5" y2="-1.25" width="0.1" layer="21"/>
+<wire x1="-1.5" y1="-1.25" x2="-1.5" y2="1.25" width="0.1" layer="21"/>
+<rectangle x1="-2" y1="-0.7" x2="-1.5" y2="0.7" layer="21"/>
+<rectangle x1="1.5" y1="-0.7" x2="2" y2="0.7" layer="21" rot="R180"/>
+<rectangle x1="-0.25" y1="-1.9" x2="0.25" y2="-1.25" layer="21"/>
+<smd name="1" x="-1.75" y="0" dx="0.6" dy="1.7" layer="1" stop="no"/>
+<smd name="2" x="1.75" y="0" dx="0.6" dy="1.7" layer="1" stop="no"/>
+<smd name="GND" x="0" y="-1.65" dx="0.8" dy="1.1" layer="1" stop="no"/>
+<rectangle x1="-2.05" y1="-0.85" x2="-1.45" y2="0.85" layer="29"/>
+<rectangle x1="-0.4" y1="-2.2" x2="0.4" y2="-1.1" layer="29"/>
+<rectangle x1="1.45" y1="-0.85" x2="2.05" y2="0.85" layer="29"/>
+<wire x1="-0.85" y1="1.25" x2="-0.85" y2="1.55" width="0.08" layer="21"/>
+<wire x1="-0.85" y1="1.55" x2="-0.45" y2="1.95" width="0.08" layer="21"/>
+<wire x1="-0.45" y1="1.95" x2="0.45" y2="1.95" width="0.08" layer="21"/>
+<wire x1="0.45" y1="1.95" x2="0.85" y2="1.55" width="0.08" layer="21"/>
+<wire x1="0.85" y1="1.55" x2="0.85" y2="1.25" width="0.08" layer="21"/>
+<text x="2.54" y="0.635" size="0.8128" layer="25" font="vector">&gt;NAME</text>
+<text x="2.54" y="-0.635" size="0.8128" layer="27" font="vector">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="SPST">
+<wire x1="-1.27" y1="0.889" x2="0" y2="0.889" width="0.254" layer="94"/>
+<wire x1="0" y1="0.889" x2="1.27" y2="0.889" width="0.254" layer="94"/>
+<wire x1="0" y1="0.889" x2="0" y2="1.524" width="0.254" layer="94"/>
+<circle x="-1.27" y="0" radius="0.381" width="0.254" layer="94"/>
+<circle x="1.27" y="0" radius="0.381" width="0.254" layer="94"/>
+<text x="-2.54" y="2.032" size="1.27" layer="95" font="vector">&gt;NAME</text>
+<text x="-2.54" y="-2.159" size="1.27" layer="96" font="vector">&gt;VALUE</text>
+<pin name="1" x="-2.54" y="0" visible="off" length="point"/>
+<pin name="2" x="2.54" y="0" visible="off" length="point" rot="R180"/>
+<wire x1="-1.27" y1="0" x2="-2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="SPST" prefix="BTN">
+<gates>
+<gate name="G$1" symbol="SPST" x="0" y="0"/>
+</gates>
+<devices>
+<device name=".BTU-3100P(M)-B" package="B3U-3100P(M)-B">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name=".B3U-1000P(M)" package="B3U-1000P(M)">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name=".B3U-1000P(M)-B" package="B3U-1000P(M)-B">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name=".B3U-1100P(M)" package="B3U-1100P(M)">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name=".B3U-3000P(M)-B" package="B3U-3000P(M)-B">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name=".B3U-1100P(M)-B" package="B3U-1100P(M)-B">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name=".B3U-3000P(M)" package="B3U-3000P(M)">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name=".B3U-3100P(M)" package="B3U-3100P(M)">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -7200,6 +7476,8 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <part name="R3" library="rcl" deviceset="R-EU_" device="R0603"/>
 <part name="R4" library="rcl" deviceset="R-EU_" device="R0603"/>
 <part name="SUPPLY8" library="supply2" deviceset="GND" device=""/>
+<part name="BTN1" library="omron" deviceset="SPST" device=".B3U-1000P(M)"/>
+<part name="SUPPLY9" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7244,6 +7522,8 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <instance part="R3" gate="G$1" x="118.11" y="107.95" rot="R90"/>
 <instance part="R4" gate="G$1" x="118.11" y="96.52" rot="R90"/>
 <instance part="SUPPLY8" gate="GND" x="118.11" y="88.9"/>
+<instance part="BTN1" gate="G$1" x="96.52" y="50.8"/>
+<instance part="SUPPLY9" gate="GND" x="99.06" y="45.72"/>
 </instances>
 <busses>
 </busses>
@@ -7313,6 +7593,11 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <segment>
 <pinref part="R4" gate="G$1" pin="1"/>
 <pinref part="SUPPLY8" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="BTN1" gate="G$1" pin="2"/>
+<pinref part="SUPPLY9" gate="GND" pin="GND"/>
+<wire x1="99.06" y1="50.8" x2="99.06" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -7518,6 +7803,13 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <label x="116.84" y="115.57" size="1.27" layer="95" rot="R180" xref="yes"/>
 <wire x1="137.16" y1="115.57" x2="116.84" y2="115.57" width="0.1524" layer="91"/>
 <pinref part="X3" gate="-2" pin="1"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="BTN1" gate="G$1" pin="1"/>
+<pinref part="U1" gate="G$1" pin="P0.21"/>
+<wire x1="93.98" y1="50.8" x2="88.9" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
