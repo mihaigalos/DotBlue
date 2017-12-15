@@ -7437,6 +7437,115 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 </deviceset>
 </devicesets>
 </library>
+<library name="SparkFun-Jumpers">
+<description>&lt;h3&gt;SparkFun Jumpers&lt;/h3&gt;
+In this library you'll find jumpers, or other semipermanent means of changing current paths. The least permanent form is the solder jumper. These can be changed by adding, removing, or moving solder. In cases that are less likely to be changed we have jumpers that are connected with traces. These can be cut with a razor, or reconnected with solder. Reference designator JP.
+&lt;br&gt;
+&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
+&lt;br&gt;
+&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
+&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;
+&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="SMT-JUMPER_3_1-NC_TRACE_SILK">
+<wire x1="1.27" y1="-1.016" x2="-1.27" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="1.016" x2="1.7272" y2="0.5588" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-1.7272" y1="0.5588" x2="-1.27" y2="1.016" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-1.7272" y1="-0.5588" x2="-1.27" y2="-1.016" width="0.1524" layer="21" curve="90"/>
+<wire x1="1.27" y1="-1.016" x2="1.7272" y2="-0.5588" width="0.1524" layer="21" curve="90"/>
+<wire x1="1.7272" y1="-0.5588" x2="1.7272" y2="0.5588" width="0.1524" layer="21"/>
+<wire x1="-1.7272" y1="-0.5588" x2="-1.7272" y2="0.5588" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="1.016" x2="1.27" y2="1.016" width="0.1524" layer="21"/>
+<smd name="1" x="-1.016" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+<smd name="2" x="0" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+<smd name="3" x="1.016" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+<text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.143" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<wire x1="0" y1="0" x2="1.016" y2="0" width="0.254" layer="1"/>
+<polygon width="0.127" layer="29">
+<vertex x="0.3175" y="0.127"/>
+<vertex x="0.6985" y="0.127"/>
+<vertex x="0.6985" y="-0.127"/>
+<vertex x="0.3175" y="-0.127"/>
+</polygon>
+</package>
+<package name="SMT-JUMPER_3_1-NC_TRACE_NO-SILK">
+<smd name="1" x="-1.016" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+<smd name="2" x="0" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+<smd name="3" x="1.016" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+<text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.143" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<wire x1="0" y1="0" x2="1.016" y2="0" width="0.254" layer="1"/>
+<polygon width="0.127" layer="29">
+<vertex x="0.3175" y="0.127"/>
+<vertex x="0.6985" y="0.127"/>
+<vertex x="0.6985" y="-0.127"/>
+<vertex x="0.3175" y="-0.127"/>
+</polygon>
+</package>
+</packages>
+<symbols>
+<symbol name="SMT-JUMPER_3_1-NC_TRACE">
+<wire x1="-0.635" y1="-1.397" x2="0.635" y2="-1.397" width="1.27" layer="94" curve="180" cap="flat"/>
+<wire x1="-0.635" y1="1.397" x2="0.635" y2="1.397" width="1.27" layer="94" curve="-180" cap="flat"/>
+<wire x1="1.27" y1="-0.635" x2="-1.27" y2="-0.635" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="-0.635" x2="-1.27" y2="0" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-1.27" y2="0.635" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="0.635" x2="1.27" y2="0.635" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="0.635" x2="1.27" y2="-0.635" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.27" y2="0" width="0.1524" layer="94"/>
+<text x="2.54" y="0.381" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="2.54" y="-0.381" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
+<rectangle x1="-1.27" y1="-0.635" x2="1.27" y2="0.635" layer="94"/>
+<pin name="3" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="1" x="0" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
+<pin name="2" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
+<wire x1="0" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="JUMPER-SMT_3_1-NC_TRACE" prefix="JP">
+<description>&lt;h3&gt;Normally closed trace jumper (1 of 2 connections)&lt;/h3&gt;
+&lt;p&gt;This jumper has a trace between two pads so it's normally closed (NC). The other connection is normally open (NO). Use a razor knife to open the connection. For best results follow the IPC guidelines for cutting traces:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Cutout at least 0.063 mm (0.005 in).&lt;/li&gt;
+&lt;li&gt;Remove all loose material to clean up the cut area.&lt;/li&gt;
+&lt;li&gt;Seal the cut with an approved epoxy.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Reapply solder to reclose the connection, or to close the NO connection.&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="SMT-JUMPER_3_1-NC_TRACE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="_SILK" package="SMT-JUMPER_3_1-NC_TRACE_SILK">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_NO-SILK" package="SMT-JUMPER_3_1-NC_TRACE_NO-SILK">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -7478,6 +7587,8 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <part name="SUPPLY8" library="supply2" deviceset="GND" device=""/>
 <part name="BTN1" library="omron" deviceset="SPST" device=".B3U-1000P(M)"/>
 <part name="SUPPLY9" library="supply2" deviceset="GND" device=""/>
+<part name="P+1" library="supply1" deviceset="+5V" device=""/>
+<part name="JP1" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_3_1-NC_TRACE" device="_NO-SILK"/>
 </parts>
 <sheets>
 <sheet>
@@ -7509,7 +7620,7 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <instance part="+3V1" gate="G$1" x="20.32" y="157.48" rot="R90"/>
 <instance part="SUPPLY3" gate="GND" x="71.12" y="12.7"/>
 <instance part="+3V2" gate="G$1" x="-22.86" y="66.04" rot="R90"/>
-<instance part="+3V3" gate="G$1" x="127" y="110.49" rot="R90"/>
+<instance part="+3V3" gate="G$1" x="127" y="97.79" rot="R180"/>
 <instance part="C1" gate="G$1" x="-13.97" y="63.5"/>
 <instance part="SUPPLY4" gate="GND" x="-13.97" y="55.88"/>
 <instance part="C2" gate="G$1" x="11.43" y="49.53" rot="R90"/>
@@ -7524,6 +7635,8 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <instance part="SUPPLY8" gate="GND" x="118.11" y="88.9"/>
 <instance part="BTN1" gate="G$1" x="96.52" y="50.8"/>
 <instance part="SUPPLY9" gate="GND" x="99.06" y="45.72"/>
+<instance part="P+1" gate="1" x="148.59" y="97.79" rot="R180"/>
+<instance part="JP1" gate="G$1" x="137.16" y="102.87" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -7619,6 +7732,12 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <junction x="21.59" y="165.1"/>
 <junction x="17.78" y="165.1"/>
 </segment>
+<segment>
+<pinref part="JP1" gate="G$1" pin="1"/>
+<pinref part="P+1" gate="1" pin="+5V"/>
+<wire x1="142.24" y1="102.87" x2="148.59" y2="102.87" width="0.1524" layer="91"/>
+<wire x1="148.59" y1="102.87" x2="148.59" y2="100.33" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="USB_D-" class="0">
 <segment>
@@ -7675,17 +7794,18 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <junction x="16.51" y="66.04"/>
 </segment>
 <segment>
-<pinref part="+3V3" gate="G$1" pin="+3V3"/>
-<pinref part="X3" gate="-4" pin="1"/>
-<wire x1="129.54" y1="110.49" x2="137.16" y2="110.49" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="+3V4" gate="G$1" pin="+3V3"/>
 <pinref part="U$1" gate="G$1" pin="+"/>
 <wire x1="135.89" y1="59.69" x2="135.89" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="+1"/>
 <wire x1="135.89" y1="53.34" x2="135.89" y2="48.26" width="0.1524" layer="91"/>
 <junction x="135.89" y="53.34"/>
+</segment>
+<segment>
+<pinref part="JP1" gate="G$1" pin="3"/>
+<pinref part="+3V3" gate="G$1" pin="+3V3"/>
+<wire x1="132.08" y1="102.87" x2="127" y2="102.87" width="0.1524" layer="91"/>
+<wire x1="127" y1="102.87" x2="127" y2="100.33" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LED_GREEN" class="0">
@@ -7810,6 +7930,13 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <pinref part="BTN1" gate="G$1" pin="1"/>
 <pinref part="U1" gate="G$1" pin="P0.21"/>
 <wire x1="93.98" y1="50.8" x2="88.9" y2="50.8" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="X3" gate="-4" pin="1"/>
+<pinref part="JP1" gate="G$1" pin="2"/>
+<wire x1="137.16" y1="110.49" x2="137.16" y2="107.95" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
